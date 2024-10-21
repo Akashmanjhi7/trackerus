@@ -1,10 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Partner from '../components/Partner'
 
 const Home = () => {
   return (
-    <div className='flex flex-col items-center justify-center h-screen'>
-        <section className='w-full min-h-screen relative overflow-hidden'>
+    <div className='flex flex-col items-center justify-center min-h-screen'>
+        <section className='w-full h-screen relative overflow-hidden'>
           <video
             className='absolute top-0 left-0 w-full h-full object-cover'
             autoPlay
@@ -32,6 +33,7 @@ const Home = () => {
                 </Link>
           </div>
         </section>
+        <Partner />
     </div>
   )
 }
