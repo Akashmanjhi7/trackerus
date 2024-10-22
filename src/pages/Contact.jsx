@@ -62,8 +62,8 @@ const Contact = () => {
                 <div className="flex flex-col lg:w-full ">
                   <h2 className="text-2xl">Contact</h2>
                   <p className="">
-                    <a href="https://wa.me/919582541315" target="_blank" rel="noopener noreferrer" className="hover:underline">
-                      Tel: 9582541315
+                    <a href="https://wa.me/919625033736" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                      Tel: +91 9625033736
                     </a>
                   </p>
                   <p className="">
