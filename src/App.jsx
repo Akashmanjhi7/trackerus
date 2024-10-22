@@ -29,7 +29,7 @@ requestAnimationFrame(raf);
   return (
     <> 
       <Navbar />
-      <div className='bg-back text-white'>
+      <div className='bg-back text-head'>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />

@@ -26,7 +26,7 @@ const Navbar = () => {
         <li key={index} className=" md:my-0">
           <NavLink
             to={item.to}
-            className={({ isActive }) => `${isActive ? 'text-text' : 'text-white'} block py-2 px-3 rounded transition-all duration-300 sm:text-[1.1vw] text-[8vh] hover:text-text`}
+            className={({ isActive }) => `${isActive ? 'text-text' : 'text-head'} block py-2 px-3 rounded transition-all duration-300 sm:text-[1.1vw] text-[8vh] hover:text-text`}
             onClick={closeMobileMenu}
           >
             {item.text}
@@ -39,12 +39,14 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="bg-back text-white w-full fixed top-0 left-0 z-50">
+      <nav className="bg-zinc-100 text-head w-full fixed top-0 left-0 z-50">
         <div className="flex items-center justify-between p-4 max-w-screen-xl mx-auto">
-          <Link to="/" className="text-[3.6vh] sm:text-[1.5vw] font-bold text-text  ">TRACKER US</Link>
+          <Link to="/" className="text-[3.6vh] sm:text-[1.5vw] font-bold text-text  ">
+          <img src="/logo/logo.png" alt="trackerus" className='h-12 ' />
+          </Link>
           <button
             onClick={toggleMobileMenu}
-            className="md:hidden p-2 text-white"
+            className="md:hidden p-2 text-head"
             aria-controls="navbar-default"
             aria-expanded={isMobileMenuOpen}
           >
@@ -65,7 +67,7 @@ const Navbar = () => {
       </nav>
       
       {/* Mobile menu */}
-      <div className={`fixed top-0 left-0 w-full h-full bg-back z-40 transform transition-transform duration-[1.3s] ${isMobileMenuOpen ? 'translate-y-0' : 'translate-y-[-100%]'}`}>
+      <div className={`fixed top-0 left-0 w-full h-full bg-white z-40 transform transition-transform duration-[1.3s] ${isMobileMenuOpen ? 'translate-y-0' : 'translate-y-[-100%]'}`}>
         <div className="relative flex flex-col items-center justify-center h-full">
           <button onClick={closeMobileMenu} className="absolute top-4 right-4 text-white">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

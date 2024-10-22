@@ -4,8 +4,8 @@ import imageData from '../utils/imagedata.json'
 const Gallery = () => {
     
   return (
-    <div className='min-h-screen w-full bg-zinc-800 pt-20 pb-20'>
-        <div className='flex flex-col items-center justify-center bg-zinc-800 mb-20 max-w-[80vw] mx-auto '>
+    <div className='min-h-screen w-full  pt-20 pb-20'>
+        <div className='flex flex-col items-center justify-center  mb-20 max-w-[80vw] mx-auto '>
             <h1 className='text-[4vw] font-bold'> Our <span className='text-text'>Gallery</span></h1>
             <p className='text-[1.5vw] text-center'>Explore our innovative vehicle GPS tracking and CCTV camera solutions.</p>
         </div>

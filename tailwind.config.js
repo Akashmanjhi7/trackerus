@@ -8,7 +8,10 @@ export default {
     extend: {
       colors: {
         text: '#90C444',
-        back : "#1F1F1F"
+        // back : "#1F1F1F"
+        back: '#fff',
+        head: "#000",
+        
       },
     },
   },

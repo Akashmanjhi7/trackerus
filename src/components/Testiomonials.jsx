@@ -22,18 +22,18 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <div className='flex flex-col items-center justify-center w-full  bg-zinc-800 py-16'>
+    <div className='flex flex-col items-center justify-center w-full text-head  py-16'>
       <h1 className=' text-[4vw] font-bold mb-12'>Customer <span className='text-text'>Reviews</span></h1>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-8 w-4/5 max-w-6xl'>
         {testimonials.map((testimonial) => (
           <div key={testimonial.id} className='bg-back p-6 rounded-lg shadow-lg'>
-            <p className='text-white text-lg mb-4'>{testimonial.content}</p>
+            <p className='text-head text-lg mb-4'>{testimonial.content}</p>
             <div className='flex items-center justify-between'>
               <div className='flex items-center'>
                 <img src={testimonial.image} alt={testimonial.author} className='w-12 h-12 rounded-full mr-4' />
                 <div>
                   <p className='text-text font-semibold'>{testimonial.author}</p>
-                  <p className='text-white text-sm'>{testimonial.place}</p>
+                  <p className='text-head text-sm'>{testimonial.place}</p>
                 </div>
               </div>
               <div className='flex'>
