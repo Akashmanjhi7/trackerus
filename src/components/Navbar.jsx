@@ -1,46 +1,82 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
 const Navbar = () => {
-  return (
-    <nav className='bg-zinc-100 w-full fixed top-0 left-0 right-0 z-50'>
-       
-            <div className="flex flex-wrap items-center justify-between mx-auto p-4  w-full max-w-screen-xl bg-transparent  ">
-                <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-                    {/* <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" /> */}
-                    <span className="self-center text-2xl font-bold whitespace-nowrap text-text">TRACKER US</span>
-                </Link>
-                <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden focus:outline-none focus:ring-2" aria-controls="navbar-default" aria-expanded="false">
-                    <span className="sr-only">Open main menu</span>
-                    <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15"/>
-                    </svg>
-                </button>
-                <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-                    <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
-                        {[
-                            { to: "/", text: "Home", current: true },
-                            { to: "/about", text: "About" },
-                            { to: "/services", text: "Services" },
-                            { to: "/solutions", text: "Solutions" },
-                            { to: "/contact", text: "Contact" }
-                        ].map((item, index) => (
-                            <li key={index}>
-                                <NavLink
-                                    className={({ isActive }) => `block py-2 px-3 rounded md:p-0 relative group ${isActive ? 'text-text' : ''} hover:text-text`}
-                                    to={item.to} 
-                                >
-                                    {item.text}
-                                    <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-text transition-all duration-300 group-hover:w-full"></span>
-                                </NavLink>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            </div>
-        
-    </nav>
-  )
-}
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-export default Navbar
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
+  const navItems = [
+    { to: "/", text: "Home" },
+    { to: "/about", text: "About" },
+    { to: "/services", text: "Services" },
+    { to: "/solutions", text: "Solutions" },
+    { to: "/contact", text: "Contact" }
+  ];
+
+  const renderNavItems = (isMobile = false) => (
+    <ul className={`font-medium ${isMobile ? 'text-center' : 'flex space-x-3'}`}>
+      {navItems.map((item, index) => (
+        <li key={index} className=" md:my-0">
+          <NavLink
+            to={item.to}
+            className={({ isActive }) => `${isActive ? 'text-text' : 'text-white'} block py-2 px-3 rounded transition-all duration-300 sm:text-[1.1vw] text-[8vh] hover:text-text`}
+            onClick={closeMobileMenu}
+          >
+            {item.text}
+            <span className={`absolute left-0 bottom-0 w-0 h-0.5 bg-text transition-all duration-300 ${isMobile ? '' : 'group-hover:w-full'}`}></span>
+          </NavLink>
+        </li>
+      ))}
+    </ul>
+  );
+
+  return (
+    <>
+      <nav className="bg-back text-white w-full fixed top-0 left-0 z-50">
+        <div className="flex items-center justify-between p-4 max-w-screen-xl mx-auto">
+          <Link to="/" className="text-[3.6vh] sm:text-[1.5vw] font-bold text-text  ">TRACKER US</Link>
+          <button
+            onClick={toggleMobileMenu}
+            className="md:hidden p-2 text-white"
+            aria-controls="navbar-default"
+            aria-expanded={isMobileMenuOpen}
+          >
+            {isMobileMenuOpen ? (
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            ) : (
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            )}
+          </button>
+          <div className="hidden  md:block">
+            {renderNavItems()}
+          </div>
+        </div>
+      </nav>
+      
+      {/* Mobile menu */}
+      <div className={`fixed top-0 left-0 w-full h-full bg-back z-40 transform transition-transform duration-[1.3s] ${isMobileMenuOpen ? 'translate-y-0' : 'translate-y-[-100%]'}`}>
+        <div className="relative flex flex-col items-center justify-center h-full">
+          <button onClick={closeMobileMenu} className="absolute top-4 right-4 text-white">
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+          {renderNavItems(true)}
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Navbar;

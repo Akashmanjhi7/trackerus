@@ -1,10 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Partner from '../components/Partner'
+import TrackSolution from '../components/TrackSolution'
+import Testimonials from '../components/Testiomonials'
+import Client from '../components/Client'
+import Gallery from '../components/Gallery'
 
 const Home = () => {
   return (
-    <div className='flex flex-col items-center justify-center min-h-screen'>
+    <div className='flex flex-col items-center justify-center min-h-screen mb-20'>
         <section className='w-full h-screen relative overflow-hidden'>
           <video
             className='absolute top-0 left-0 w-full h-full object-cover'
@@ -33,6 +37,11 @@ const Home = () => {
           </div>
         </section>
         <Partner />
+        <TrackSolution /> 
+        <Testimonials />
+        <Client />
+        <Gallery />
+
     </div>
   )
 }

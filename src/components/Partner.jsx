@@ -4,8 +4,8 @@ const Partner = () => {
   return (
     <div className="w-full min-h-screen">
       <section className="max-w-screen-xl mx-auto min-h-screen pt-20 ">
-        <div className="w-full flex items-start justify-between gap-10">
-          <div className="text text-[4vw] leading-[1.2]  w-1/2 font-bold">
+        <div className="w-full flex flex-col sm:flex-row sm:items-start items-center  sm:justify-between gap-10">
+          <div className="text text-[4vw] leading-[1.2]  sm:w-1/2  font-bold">
             <h1>
               Your Trusted <span className="text-text">GPS</span>
             </h1>

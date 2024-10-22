@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         text: '#90C444',
+        back : "#1F1F1F"
       },
     },
   },
