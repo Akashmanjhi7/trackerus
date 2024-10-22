@@ -9,11 +9,10 @@ const Home = () => {
           <video
             className='absolute top-0 left-0 w-full h-full object-cover'
             autoPlay
-            loop
             muted
+            key={Date.now()} // This key will force the video to reload
           >
-            <source src="/videos/hero.mp4" type="video/mp4" />
-            
+            <source src="/videos/hero1.mp4" type="video/mp4" />
           </video>
           <div className='absolute inset-0 bg-black opacity-50'></div>
           <div className='relative z-10 flex flex-col leading-[1.1] items-center justify-center h-full text-white'>
