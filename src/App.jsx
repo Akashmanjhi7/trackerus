@@ -8,6 +8,12 @@ import Solutions from './pages/Solutions'
 import Contact from './pages/Contact'
 import Footer from './components/Footer'
 import Lenis from 'lenis'
+import Gps from './pages/products/Gps'
+import FuelMonitor from './pages/products/FuelMonitor'
+import Cctv from './pages/products/Cctv'
+import AssetTracking from './pages/products/AssetTracking'
+import VehicalTracking from './pages/products/VehicalTracking'
+import WasteTracking from './pages/products/WasteTracking'
 const App = () => {
   useEffect(()=>{
     // Initialize Lenis
@@ -36,6 +42,12 @@ requestAnimationFrame(raf);
         <Route path='/services' element={<Services />} />
         <Route path='/solutions' element={<Solutions />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/services/gps' element={<Gps />} />
+        <Route path='/services/fuel-monitor' element={<FuelMonitor />} />
+        <Route path='/services/cctv' element={<Cctv />} />
+        <Route path='/services/asset-tracking' element={<AssetTracking />} />
+        <Route path='/services/vehicle-tracking' element={<VehicalTracking />} />
+        <Route path='/services/waste-tracking' element={<WasteTracking />} />
       </Routes>
       <Footer />
     </div>

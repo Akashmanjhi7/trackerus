@@ -147,7 +147,7 @@ width: 100%;
 
 @media screen and (max-width: 60rem) {
     .wrapper {
-        padding: 1rem;
+        padding: 0.2rem;
     }
 
     .gallery {

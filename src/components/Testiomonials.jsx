@@ -23,8 +23,8 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <div className='flex flex-col items-center justify-center w-full text-head  py-16'>
-      <h1 className=' text-[4vw] font-bold mb-12'>Customer <span className='text-text'>Reviews</span></h1>
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-8 w-4/5 max-w-6xl'>
+      <h1 className=' sm:text-[4vw] text-[5vh] leading-[1.2] font-bold mb-12'>Customer <span className='text-text'>Reviews</span></h1>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-8 sm:w-4/5 px-2 sm:px-0  max-w-6xl'>
         {testimonials.map((testimonial) => (
           <div key={testimonial.id} className='bg-back p-6 rounded-lg shadow-lg'>
             <p className='text-head text-lg mb-4'>{testimonial.content}</p>

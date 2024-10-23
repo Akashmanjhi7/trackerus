@@ -32,10 +32,10 @@ const Footer = () => {
               <h2 className="mb-6 text-sm font-bold  uppercase">Follow us</h2>
               <ul className=" font-medium">
                 <li className="mb-4">
-                  <Link to="/" className="hover:text-text">Instagram</Link>
+                  <Link to="https://www.instagram.com/trackerustechnology2023/" target='_blank' className="hover:text-text">Instagram</Link>
                 </li>
                 <li>
-                  <Link to="/" className="hover:text-text">Facebook</Link>
+                  <Link to="https://www.facebook.com/trackerustechnology2023" target='_blank' className="hover:text-text">Facebook</Link>
                 </li>
               </ul>
             </div>

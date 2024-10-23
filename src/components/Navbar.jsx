@@ -21,16 +21,16 @@ const Navbar = () => {
   ];
 
   const renderNavItems = (isMobile = false) => (
-    <ul className={`font-medium ${isMobile ? 'text-center' : 'flex space-x-3'}`}>
+    <ul className={`font-medium ${isMobile ? 'text-center' : 'flex space-x-8'}`}>
       {navItems.map((item, index) => (
-        <li key={index} className=" md:my-0">
+        <li key={index} className=" md:my-0   ">
           <NavLink
             to={item.to}
-            className={({ isActive }) => `${isActive ? 'text-text' : 'text-head'} block py-2 px-3 rounded transition-all duration-300 sm:text-[1.1vw] text-[8vh] hover:text-text`}
+            className={({ isActive }) => `${isActive ? 'text-text' : 'text-head'} block py-2   transition-all duration-300 sm:text-[1.1vw] text-[8vh] hover:text-text group relative overflow-hidden`}
             onClick={closeMobileMenu}
           >
             {item.text}
-            <span className={`absolute left-0 bottom-0 w-0 h-0.5 bg-text transition-all duration-300 ${isMobile ? '' : 'group-hover:w-full'}`}></span>
+            <span className={`absolute sm:visible invisible  left-0 bottom-0 w-full h-[2px] bg-text transition-all duration-300 ${isMobile ? 'w-0' : 'transform translate-x-[-100%] group-hover:translate-x-0'}`}></span>
           </NavLink>
         </li>
       ))}
@@ -40,9 +40,9 @@ const Navbar = () => {
   return (
     <>
       <nav className="bg-zinc-100 text-head w-full fixed top-0 left-0 z-50">
-        <div className="flex items-center justify-between p-4 max-w-screen-xl mx-auto">
+        <div className="flex items-center justify-between sm:py-4 px-4 py-2 max-w-screen-xl mx-auto">
           <Link to="/" className="text-[3.6vh] sm:text-[1.5vw] font-bold text-text  ">
-          <img src="/logo/logo.png" alt="trackerus" className='h-12 ' />
+          <img src="/logo/logo.png" alt="trackerus" className='sm:h-12 h-8 ' />
           </Link>
           <button
             onClick={toggleMobileMenu}
@@ -51,11 +51,11 @@ const Navbar = () => {
             aria-expanded={isMobileMenuOpen}
           >
             {isMobileMenuOpen ? (
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg className="w-6 h-6" fill="#90C444" stroke="#90C444" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
               </svg>
             ) : (
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg className="w-6 h-6" fill="#90C444" stroke="#90C444" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
               </svg>
             )}

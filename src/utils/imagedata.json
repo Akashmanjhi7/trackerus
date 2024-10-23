@@ -3,38 +3,44 @@
       "id": 1,
       "src": "https://influencercollab.in/articleassets/398.jpeg",
       "alt": "GPS Navigation",
-      "caption": "GPS Navigation"
+      "caption": "GPS Navigation",
+      "link": "/services/gps"
     },
     {
         "id": 2,
         "src": "https://www.uffizio.com/wp-content/uploads/2023/12/Diesel-Monitoring-System.jpg",
         "alt": "Fuel Monitoring",
-        "caption": "Fuel Monitoring"
+        "caption": "Fuel Monitoring",
+        "link": "/services/fuel-monitor"
       },
     {
       "id": 3,
       "src": "https://i.ebayimg.com/images/g/vrEAAOSw4BVhNzmH/s-l1600.webp",
       "alt": "CCTV Camera",
-      "caption": "CCTV Camera"
+      "caption": "CCTV Camera",
+      "link": "/services/cctv"
     },
    
     {
       "id": 4,
       "src": "https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "alt": "Asset Tracking",
-      "caption": "Asset Tracking"
+      "caption": "Asset Tracking",
+      "link": "/services/asset-tracking"
     },
     {
         "id": 5,
         "src": "https://images.unsplash.com/photo-1512213187376-2414d755f1f0?q=80&w=1884&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "alt": "Vehicle Tracking",
-        "caption": "Vehicle Tracking"
+        "caption": "Vehicle Tracking",
+        "link": "/services/vehicle-tracking"
       },
     {
       "id": 6,
       "src": "https://images.unsplash.com/photo-1635691315495-ff39debe5764?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d2FzdGUlMjBjb2xsZWN0aW9ufGVufDB8MHwwfHx8MA%3D%3D",
       "alt": "Waste Tracking",
-      "caption": "Waste Tracking"
+      "caption": "Waste Tracking",
+      "link": "/services/waste-tracking"
     }
   ]
   

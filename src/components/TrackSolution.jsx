@@ -23,13 +23,13 @@ const cardData = [
 
 const TrackSolution = () => {
   return (
-    <div className='flex flex-col items-center  w-full mt-20 justify-center min-h-screen'>
-      <h1 className='text-[4vw] font-bold'> <span className='text-text'>Tracking</span> Solution Simplified</h1>
-      <p className='text- text-[1.5vw] w-1/2 text-center'>Discover advanced CPS tracking and CCTV camera solutions tailored for
+    <div className='flex flex-col items-center  w-full sm:mt-20 mt-10 justify-center min-h-screen'>
+      <h1 className='sm:text-[4vw] text-[5vh] leading-[1.2] text-center  font-bold'> <span className='text-text'>Tracking</span> Solution Simplified</h1>
+      <p className=' sm:text-[1.5vw] text-[2vh] sm:w-1/2 w-full pt-2 text-center'>Discover advanced CPS tracking and CCTV camera solutions tailored for
       your vehicle security needs.</p>
 
       <div className="cards">
-        <div className="flex flex-wrap justify-center gap-8 mt-12">
+        <div className="flex flex-wrap justify-center gap-8 mt-12 ">
           {cardData.map((card, index) => (
             <div key={index} className="bg-back p-6 rounded-lg shadow-lg max-w-sm">
               <img src={card.image} alt={card.alt} className="w-full h-48 object-cover mb-4 rounded-lg" />
