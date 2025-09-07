@@ -5,7 +5,7 @@ const Solutions = () => {
   return (
     <div className="min-h-screen pt-20">
       {/* Heading */}
-      <div className="heading flex items-center justify-center max-w-7xl mx-auto text-head py-12">
+      <div className="heading flex items-center justify-center text-center text-wrap max-w-7xl mx-auto text-head py-12">
         <h1 className="sm:text-[4vw] text-[5vh] leading-[1.2] font-bold">
           Our Comprehensive <span className="text-text">Solutions</span>
         </h1>
