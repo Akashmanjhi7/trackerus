@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "School Bus Monitoring",
+    "description": "Our school bus tracking system provides peace of mind for parents and school authorities. It ensures student safety, streamlines operations, and improves communication.",
+    "image": "/images/bus.png",
+    "features": [
+      {
+        "label": "Real-Time Tracking",
+        "text": "Parents can see the bus's live location on a map."
+      },
+      {
+        "label": "Instant Notifications",
+        "text": "Get alerts for bus arrivals, delays, or route changes."
+      },
+      {
+        "label": "Driver Behavior Monitoring",
+        "text": "Monitor for harsh braking, acceleration, or over-speeding."
+      },
+      {
+        "label": "RFID & QR Code Integration",
+        "text": "Ensure every student is accounted for with easy check-ins."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "CCTV Monitoring & Child Safety",
+    "description": "Enhance workplace and classroom security with live CCTV monitoring. Parents can ensure their child’s safety by accessing real-time footage from classrooms.",
+    "image": "/images/cctv.png",
+    "features": [
+      {
+        "label": "Workplace Surveillance",
+        "text": "Monitor office or workplace environments in real-time."
+      },
+      {
+        "label": "Classroom Monitoring",
+        "text": "Parents can watch their children live while at work."
+      },
+      {
+        "label": "Cloud Storage",
+        "text": "All recordings stored securely with easy access anytime."
+      },
+      {
+        "label": "AI-Based Alerts",
+        "text": "Get instant alerts for unusual activities or security breaches."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Advanced Fleet Telematics",
+    "description": "An end-to-end solution for modern fleet management. Optimize your operations, reduce costs, and enhance vehicle security with our smart telematics platform.",
+    "image": "/images/fleet.png",
+    "features": [
+      {
+        "label": "Intelligent Tracking",
+        "text": "Track every vehicle with live updates and detailed route history."
+      },
+      {
+        "label": "Remote Vehicle Lock",
+        "text": "Secure your assets against theft with remote immobilization."
+      },
+      {
+        "label": "Fuel Monitoring",
+        "text": "Reduce fuel costs with live tracking and theft alerts."
+      },
+      {
+        "label": "Maintenance Scheduling",
+        "text": "Stay on top of vehicle health with automated reminders."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Smart Waste Collection",
+    "description": "Our platform simplifies waste management by providing real-time data, route optimization, and operational transparency. Improve efficiency and reduce environmental impact.",
+    "image": "/images/waste.png",
+    "features": [
+      {
+        "label": "Live Progress Monitoring",
+        "text": "Keep track of waste crew activity and progress in real-time."
+      },
+      {
+        "label": "Optimized Routes",
+        "text": "Ensure maximum efficiency with smart route planning."
+      },
+      {
+        "label": "Instant Alerts",
+        "text": "Receive notifications for any deviations or issues."
+      },
+      {
+        "label": "Data Analytics",
+        "text": "Get accurate analytics to optimize operations and reduce costs."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Vehicle Anti-Theft GPS Security",
+    "description": "Protect your vehicles with our advanced anti-theft GPS security system. Stay informed and take quick action to safeguard your valuable assets.",
+    "image": "/images/antitheft.png",
+    "features": [
+      {
+        "label": "Real-Time GPS Security",
+        "text": "Monitor vehicle movement live and detect unauthorized activity instantly."
+      },
+      {
+        "label": "Geo-Fencing",
+        "text": "Set virtual boundaries and receive alerts when vehicles move out of range."
+      },
+      {
+        "label": "Remote Immobilization",
+        "text": "Lock down your vehicle remotely in case of theft."
+      },
+      {
+        "label": "Emergency SOS Alerts",
+        "text": "Quick response system for emergencies and theft attempts."
+      }
+    ]
+  }
+]
