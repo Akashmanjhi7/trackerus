@@ -14,7 +14,7 @@ const Home = () => {
             className='absolute top-0 left-0 w-full h-full object-cover'
             autoPlay
             muted
-            key={Date.now()} // This key will force the video to reload
+            key={Date.now()} 
           >
             <source src="/videos/hero1.mp4" type="video/mp4" />
           </video>
