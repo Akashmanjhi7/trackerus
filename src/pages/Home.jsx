@@ -5,6 +5,7 @@ import TrackSolution from '../components/TrackSolution'
 import Testimonials from '../components/Testiomonials'
 import Client from '../components/Client'
 import Gallery from '../components/Gallery'
+import { IoLogoGooglePlaystore } from "react-icons/io5";
 
 const Home = () => {
   return (
@@ -30,9 +31,11 @@ const Home = () => {
                 </p>
                 </div>
 
-                <Link to="/solutions" className='bg-text text-white px-8 py-4 mt-8 flex items-center justify-center
-                 rounded-full sm:text-[1.3vw] text-[2.3vh]'>
-                    Discover
+                <Link to="/" className='bg-text text-white px-8 py-4 mt-8 flex items-center justify-center
+                 rounded-full sm:text-[1.3vw] text-[2.3vh] uppercase'>
+              
+                  <IoLogoGooglePlaystore />&nbsp;
+                    Download App
                 </Link>
           </div>
         </section>
