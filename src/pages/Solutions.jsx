@@ -3,7 +3,7 @@ import solutionsData from "../utils/solutionData.json";
 
 const Solutions = () => {
   return (
-    <div className="min-h-screen pt-20">
+    <div className="min-h-screen w-full pt-20">
       {/* Heading */}
       <div className="heading flex items-center justify-center text-center text-wrap max-w-7xl mx-auto text-head py-12">
         <h1 className="sm:text-[4vw] text-[5vh] leading-[1.2] font-bold">
@@ -12,11 +12,11 @@ const Solutions = () => {
       </div>
 
       {/* Solutions Section */}
-      <div className="max-w-7xl mx-auto min-h-screen px-4">
+      <div className="max-w-7xl mx-auto min-h-screen px-4 flex flex-wrap">
         {solutionsData.map((solution) => (
           <div
             key={solution.id}
-            className={`w-full flex flex-col md:flex-row justify-center items-center gap-6 mb-12 
+            className={`w- flex flex-col md:flex-row justify-center items-center gap-6 mb-12 
               ${solution.id % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"}`}
           >
             {/* Image */}

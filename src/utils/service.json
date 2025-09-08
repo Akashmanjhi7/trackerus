@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "ADVANCE FLEET TELEMATICS",
+    "image": "/images/FleetService.png",
+    "description": "Trackerus Technology offers India’s most advanced fleet GPS tracking system. Get complete control with real-time monitoring, instant alerts, and performance reports for better management.",
+    "url": "/fleet-telematics-page"
+  },
+  {
+    "id": 2,
+    "title": "TASK MANAGEMENT SYSTEM",
+    "image": "/images/TMSService.png",
+    "description": "Easily manage tasks and monitor your sales team in real time. Stay updated with live locations, instant alerts, and productivity reports to improve team performance.",
+    "url": "/task-management-page"
+  },
+  {
+    "id": 3,
+    "title": "FUEL MONITORING SYSTEM",
+    "image": "/images/fuelMoniter.png",
+    "description": "Reduce fuel cost with Trackerus advanced fuel monitoring. Track usage, prevent theft, and optimize operations with real-time insights and reliable data for your fleet.",
+    "url": "/fuel-monitoring-page"
+  },
+  {
+    "id": 4,
+    "title": "SCHOOL BUS MONITORING SYSTEM",
+    "image": "/images/bus.png",
+    "description": "Ensure student safety with real-time bus tracking. Parents, schools, and transport managers benefit from instant updates, optimized routes, and efficient management for daily operations.",
+    "url": "/school-bus-monitoring-page"
+  },
+  {
+    "id": 5,
+    "title": "SCHOOL BUS CCTV MONITORING SYSTEM",
+    "image": "/images/busCCTVService.png",
+    "description": "School bus CCTV ensures safe transport with live video monitoring. Authorities track driver behavior, attendance, student safety, and overall journey records with real-time updates.",
+    "url": "/cctv-monitoring-page"
+  },
+  {
+    "id": 6,
+    "title": "ASSETS TRACKING SYSTEM",
+    "image": "/images/AssetTrackingService.png",
+    "description": "Minimize asset loss with real-time tracking solutions. Get instant alerts, monitor supply chain movement, and reduce costs with end-to-end technology for better management.",
+    "url": "/assets-tracking-page"
+  }
+]
