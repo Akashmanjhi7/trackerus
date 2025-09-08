@@ -12,7 +12,7 @@ const Solutions = () => {
       </div>
 
       {/* Solutions Section */}
-      <div className="max-w-7xl mx-auto min-h-screen px-4 flex flex-wrap">
+      <div className="max-w-7xl mx-auto min-h-screen px-4 flex flex-wrap text-head">
         {solutionsData.map((solution) => (
           <div
             key={solution.id}

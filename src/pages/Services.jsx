@@ -15,7 +15,7 @@ const Services = () => {
         {servicesData.map(service => (
           <FloatingCard
             key={service.id}
-            className="text-white w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.33%-10.66px)] min-h-[400px] flex flex-col group"
+            className="w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.33%-10.66px)] min-h-[400px] flex flex-col group"
           >
             <div className="flex-grow">
               <h2 className="text-2xl font-bold mb-2">{service.title}</h2>
